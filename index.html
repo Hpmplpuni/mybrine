@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <img src="pp.jfif" alt="Birthday Cake" class="cake-image">
+    <h1>Happy Birthday, my dear lovely sister!</h1>
+    <p id="typedMessage"></p>
+    <button id="surpriseButton">Open Your Gift!</button>
+    <div class="gift-container hidden" id="giftContainer">
+      <img src="pj.jpg" alt="Gift Box" class="gift-box" id="giftBox">
+    </div>
+  </div>
+
+  <!-- Surprise Popup -->
+  <div class="popup hidden" id="popup">
+    <div class="popup-content">
+      <h2>🎉 For My Amazing Sister 🎉</h2>
+      <p>"The one who knows all my secrets."</p>
+      <p>"My best friend through everything."</p>
+      <p>"My guide and my confidant."</p>
+      <p>"My strength, my support, my belief."</p>
+      <p>"The one who shares my laughter and tears."</p>
+      <p>"Happy Birthday to my wonderful sister!"</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <!-- Sorry Message Popup -->
+  <div class="popup hidden" id="sorryPopup">
+    <div class="popup-content">
+      <h2>Sorry Message</h2>
+      <p>ನನ್ನಿಂದ ಏನಾದರೂ ತಪ್ಪಾಗಿದ್ದರೆ ಕ್ಷಮಿಸು.</p>
+      <p>ನಾನು ಯಾವಾಗಲೂ ನಿನ್ನ ತಮ್ಮನಾಗಿಯೇ ಇರುತ್ತೇನೆ, ಅಕ್ಕಾ, ಯಾವ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿಯೂ.</p>
+      <p>ಕ್ಷಮಿಸು ಮತ್ತು ದಯವಿಟ್ಟು ignore Madbeda ಅಕ್ಕಾ, ತಾಳಿಕೊಳ್ಳಲು ಆಗುವುದಿಲ್ಲ.</p>
+      <button id="closeSorryPopup">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

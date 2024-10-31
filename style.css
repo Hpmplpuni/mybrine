@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3477ea, #ffc8a9);
+}
+
+/* Card */
+.card {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card h1 {
+  color: #ff6b6b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.4rem;
+  margin: 10px 0 20px;
+  font-style: italic;
+}
+
+#typedMessage {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 15px 0 20px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+}
+
+/* Images */
+.cake-image {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.gift-container {
+  margin-top: 20px;
+}
+
+.gift-box {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.gift-box:hover {
+  transform: scale(1.1);
+}
+
+/* Button */
+#surpriseButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#surpriseButton:hover {
+  background-color: #ff4b4b;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: popupFadeIn 0.5s ease-out;
+  background-image: url('gift-box.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-content h2 {
+  color: #5f27cd;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#closePopup, #closeSorryPopup {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #5f27cd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#closePopup:hover, #closeSorryPopup:hover {
+  background: #4527a0;
+}
+
+/* Animations */
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
